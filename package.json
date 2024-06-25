@@ -7,5 +7,9 @@
     "dev": "node src/server.js"
   },
   "author": "Deepak Barwal",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.14.8",
+    "typescript": "^5.5.2"
+  }
 }
