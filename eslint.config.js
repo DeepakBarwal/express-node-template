@@ -20,9 +20,6 @@ export default tseslint.config(
         ignores: ['dist/*', 'eslint.config.js'],
     },
     {
-        rules: {
-            'dot-notation': 'off',
-            '@typescript-eslint/dot-notation': 'error',
-        },
+        rules: {},
     },
 );
