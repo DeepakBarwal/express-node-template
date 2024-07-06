@@ -20,6 +20,8 @@ export default tseslint.config(
     ignores: ['dist/*', 'eslint.config.mjs']
   },
   {
-    rules: {}
+    rules: {
+      'no-console': 'error'
+    }
   }
 )
