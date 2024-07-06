@@ -1,3 +1,14 @@
-import { Config } from './config';
+import app from './app'
+import { Config } from './config'
 
-console.log('env', Config.NODE_ENV);
+const startServer = () => {
+  const PORT = Config.PORT
+  try {
+    app.listen(PORT, () => console.log(`Listening on port ${PORT}`))
+  } catch (error) {
+    console.error(error)
+    process.exit(1)
+  }
+}
+
+startServer()
