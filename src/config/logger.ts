@@ -24,8 +24,8 @@ const logger = winston.createLogger({
       format: winston.format.combine(
         winston.format.timestamp(),
         winston.format.json()
-      ),
-      silent: Config.NODE_ENV !== 'production'
+      )
+      // silent: Config.NODE_ENV !== 'production'
     })
   ]
 })
